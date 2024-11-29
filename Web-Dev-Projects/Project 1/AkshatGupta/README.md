@@ -1,4 +1,4 @@
-# portfolio-starter
+# Akshat's Portfolio website
 
 Fully responsive site with all mandatory milestones completed
 
