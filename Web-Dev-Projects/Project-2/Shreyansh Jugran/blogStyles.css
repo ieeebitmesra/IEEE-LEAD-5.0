@@ -1,0 +1,136 @@
+.blog-post {
+    margin-bottom: 2rem;
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.scrollable-menu {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+
+nav.navbar.navbar-expand-md {
+    background-color: #9c4dcc !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link:not(.dropdown-item) {
+    color: #f5f5f5 !important;
+}
+
+.navbar .nav-link:not(.dropdown-item):hover {
+    color: #aaaaaa !important;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+.navbar .form-control {
+    border: 1px solid #ced4da;
+    color: #495057;
+    background-color: #ffffff;
+}
+
+.navbar .form-control::placeholder {
+    color: #6c757d;
+}
+
+.navbar .btn-outline-success {
+    color: #9c4dcc;
+    border-color: #9c4dcc;
+    background-color: #FFFFFF;
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: #F5F5F5;
+    color: #9c4dcc;
+}
+
+.navbar .btn-outline-success:focus {
+    border-color: #9c4dcc;
+    box-shadow: 0 0 0 0.2rem rgba(156, 77, 204, 0.25);
+}
+
+.navbar .btn-outline-success {
+    color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    background-color: transparent !important;
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: #7b1fa2 !important;
+    color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+}
+
+.navbar .btn-outline-success:active {
+    background-color: #0d47a1 !important;
+    color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    box-shadow: none !important;
+}
+
+.navbar .btn-outline-success:focus {
+    border-color: #FFFFFF !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+}
+
+.navbar {
+    font-family: 'Work Sans', serif;
+}
+
+.navbar .navbar-brand {
+    font-weight: 600;
+}
+
+.navbar .nav-link {
+    font-weight: 600;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    font-size: 0.95rem;
+}
+
+.btn-read-more {
+    background-color: #0d47a1 !important;
+    color: #ffffff !important;
+    border: 2px solid #0d47a1 !important;
+}
+
+.btn-read-more:hover {
+    background-color: #1565c0 !important;
+    color: #ffffff !important;
+}
+
+.btn-read-more:focus,
+.btn-read-more:active {
+    background-color: #003c8f !important;
+    border-color: #003c8f !important;
+    color: #ffffff !important;
+}
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-slab-font {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
