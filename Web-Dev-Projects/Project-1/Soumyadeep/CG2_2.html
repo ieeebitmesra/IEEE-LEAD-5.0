@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline</title>
+  <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        :root{
+            --text-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #121212;
+          color: #f0f0f0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          flex-direction: column;
+        }
+
+        .timeline {
+          position: relative;
+          width: 80%;
+          max-width: 700px;
+          padding: 50px 0;
+        }
+
+        .timeline-item {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          opacity: 0;
+          transform: translateY(50px);
+          transition: all 0.6s ease-out;
+          margin-bottom: 20px;
+        }
+
+        .timeline-item .content {
+          background-color: #1e1e1e;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+          flex: 1;
+          margin-right: 20px;
+        }
+
+        .timeline-item .year {
+          color: #0ff;
+          font-weight: bold;
+        }
+
+        .timeline::before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: 0;
+          bottom: 0;
+          width: 2px;
+          background-color: #0ff;
+          transform: translateX(-50%);
+        }
+
+        .timeline-item.appear {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        header {
+          width: 100%;
+          padding: 20px;
+          text-align: center;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: row-reverse;
+          background-color: #121212;
+        }
+
+        header h1 {
+          color: #f0f0f0;
+          font-size: 24px;
+        }
+
+        header h1 span {
+          color: #0ff;
+        }
+
+        nav a {
+          color: #f0f0f0;
+          margin: 0 15px;
+          text-decoration: none;
+        }
+
+        nav a:hover {
+          color: #0ff;
+        }
+
+  </style>
+</head>
+<body>
+    <header>
+        <!-- <h1><span>S</span>Dronics</h1> -->
+        <nav>
+          <a href="main_page.html">HOME</a>
+          <a href="CG2_2.html"  style = "color:#00e1ff ; font-family: var(--text-font);">EDUCATION</a>
+          <a href="CG2_3.html">SKILLS</a>
+          <a href="CG2_4_1.html">PROJECTS</a>
+          <a href="CG2_5.html">CONTACT</a>
+        </nav>
+      </header>
+  <h2>EDUCATION</h2>
+  <div class="timeline">
+    
+    <div class="timeline-item" id="item1">
+      <div class="content">
+        <h3>Secondary Education</h3>
+        <p>Primary and Secondary education from ICSE affiliated school in Kolkata, West Bengal, India<br> final examination marks - 96.6%</p>
+      </div>
+      <span class="year">2021</span>
+    </div>
+
+    <div class="timeline-item" id="item2">
+      <div class="content">
+        <h3>High Secondary Education</h3>
+        <p>Higher Secondary Education from CBSE affiliated school in Kolkata, West Bengal, India<br>final examination marks - 96.6% </p>
+      </div>
+      <span class="year">2023</span>
+    </div>
+
+    <div class="timeline-item" id="item3">
+      <div class="content">
+        <h3>Graduation</h3>
+        <p><i>Bachelors of Technology</i> from Birla Institute of Technology, Mesra in<br> Computer Science Engineering.</p>
+      </div>
+      <span class="year">2027</span>
+    </div>
+
+  </div>
+  <script>
+        // Function to check if an element is visible in the viewport
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to add the appear class when the element is in viewport
+function checkVisibility() {
+  const items = document.querySelectorAll('.timeline-item');
+  items.forEach(item => {
+    if (isElementInViewport(item)) {
+      item.classList.add('appear');
+    }
+  });
+}
+
+// Listen for scroll event
+window.addEventListener('scroll', checkVisibility);
+
+// Initial check on page load
+document.addEventListener('DOMContentLoaded', checkVisibility);
+
+  </script>
+</body>
+</html>

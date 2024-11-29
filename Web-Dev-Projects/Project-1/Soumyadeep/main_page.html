@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="images/Screenshot 2024-11-09 185535.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atma:
+wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+                /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            ;
+        }
+
+        :root{
+            --text-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Dark background */
+            color: #fff; /* White text */
+        }
+
+        /* Navigation */
+        header {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            padding: 20px 50px;
+            margin-top: 10px;
+        }
+
+        .logo {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .logo span {
+            color: #00ffc3; /* Neon accent color */
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-links li a:hover {
+            color: #00ffc3; /* Neon color on hover */
+            
+        }
+
+        /* Main Section */
+        .main-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 80vh;
+            padding: 0 50px;
+        }
+
+        .intro-text h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .intro-text h1 span {
+            color: #00ffc3;
+        }
+
+        .intro-text h2 {
+            font-size: 36px;
+            margin-top: 10px;
+        }
+
+        .intro-text p {
+            margin: 20px 0;
+            color: #ccc;
+            max-width: 400px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+             Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            border-radius: 20mm;
+
+        }
+
+        .hire-btn, .contact-btn {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .hire-btn {
+            background: transparent;
+            color: #00ffc3;
+            border: 2px solid #00ffc3;
+            /* background-color: #00ffc3;
+            color: #000; */
+            transition: transform 0.3s;
+        }
+
+        .contact-btn {
+            background: transparent;
+            color: #00ffc3;
+            border: 2px solid #00ffc3;
+            transition: transform 0.3s;
+        }
+
+        .hire-btn:hover, .contact-btn:hover {
+            background-color: #fff;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        /* Social Icons */
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+            
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            /* border: 1px solid #00ffc3; */
+            border-radius: 20%;
+            /* padding:3px; */
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #00ffc3;
+            border-radius: 20%;
+        }
+
+        /* Profile Picture */
+        .profile-pic {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 20px #00ffc3;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #name
+        {
+            font-family: Roboto;
+            font-size:70px;
+            
+        }
+
+        #profession{
+            color:rgb(117, 118, 118);
+        }
+
+        /*  theme toggle button 
+        .theme-toggle {
+            padding: 5px 10px;
+            background-color: #00ffc3;
+            color: #000;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+         Styles for light theme 
+        .light-theme {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .light-theme .logo, 
+        .light-theme .nav-links li a, 
+        .light-theme .intro-text h1, 
+        .light-theme .intro-text h2, 
+        .light-theme .intro-text p {
+            color: #000;
+        }
+
+        .light-theme .hire-btn, 
+        .light-theme .contact-btn {
+            color: #00ffc3;
+            border-color: #00ffc3;
+        }*/
+
+        
+
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <!-- <h1><span>S</span>Dronics</h1> -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="main_page.html"  style = "color:#00e1ff ; font-family: var(--text-font);">HOME</a></li>
+                <li><a href="CG2_2.html" >EDUCATION</a></li>
+                <li><a href="CG2_3.html">SKILLS</a></li>
+                <li><a href="CG2_4_1.html">PROJECTS</a></li>
+                <li><a href="CG2_5.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!-- <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button> -->
+    </header>
+
+    <!-- Main Section -->
+    <section class="main-section">
+        <div class="intro-text">
+            <h1>Hi, It's <span id = "name">Soumyadeep</span></h1>
+            <h2>I'm a <span id="profession">Web Developer</span></h2>
+            <p>I'm SOUMYADEEP DUTTA <br> I am a Sophomore ,would-be Engineer ;<br> Coding enthuciast; inclined towards Softwares, designing and Robotics ; <br> I prefer <i>cout</i> more than <i>System.out.println</i> </p>
+            <div class="buttons">
+                <button class="hire-btn" style = "border-radius: 10mm;">Hire</button>
+                <a href="CG2_5.html"><button class="contact-btn" style = "border-radius: 10mm;">Contact</button></a>
+            </div>
+            <div class="social-icons">
+                <a href= "https://www.linkedin.com/in/soumyadeep-dutta-221b06292/" target = "_blank"><img src="images/174857.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/simple_soumyadeep/" target = "_blank"><img src="images/insta.jpg" alt="Instagram"></a>
+                <a href="https://leetcode.com/u/Mr_SimpleDeep/" target = "_blank"><img src="images/LeetCode.png" alt="Leetcode"></a>
+                <a href="https://github.com/SimpleMan05" target="_blank"><img src="images/github.jpg" alt="Github"></a>
+            </div>
+        </div>
+        <div class="profile-pic">
+            <img src="images/my pic 2.jpeg" alt="SD">
+        </div>
+    </section>
+
+    <script>
+        // JavaScript to dynamically change profession (optional)
+        const professions = ["Web Developer", "Graphic Designer", "Content Creator"];
+        let index = 0;
+
+        function changeProfession() {
+            const professionElement = document.getElementById("profession");
+            professionElement.textContent = professions[index];
+            index = (index + 1) % professions.length;
+        }
+
+        setInterval(changeProfession, 3000); // Change profession every 3 seconds
+
+        // function toggleTheme() {
+        //     document.body.classList.toggle('light-theme');}
+
+    </script>
+</body>
+</html>
