@@ -1,0 +1,41 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: 'class',
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      animation: {
+        float: 'float 6s ease-in-out infinite',
+        float2: 'float 8s ease-in-out infinite',
+        float3: 'float 7s ease-in-out infinite',
+        float4: 'float 5s ease-in-out infinite',
+        
+      },
+      colors: {
+        gray: {
+          200: "#D5DAE1"
+        },
+        black: {
+          DEFAULT: "#000",
+          500: "#1D2235"
+        },
+        blue: {
+          500: "#2b77e7"
+        }
+        
+      },
+      fontFamily: {
+        worksans: ["Work Sans", "sans-serif"],
+        poppins: ['Poppins', "sans-serif"]
+      },
+      boxShadow: {
+        card: '0px 1px 2px 0px rgba(0, 0, 0, 0.05)',
+        "neon-pink":"0px 0px 10px #F637EC"
+      }
+    },
+  },
+  plugins: [],
+}
