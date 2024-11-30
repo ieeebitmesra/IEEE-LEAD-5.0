@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+        }
+        :root{
+            --base-color:#00ffc3;
+            --shadow-color:rgba(0, 255, 255, 0.3);
+            
+            --text-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+        }
+
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 100vh;
+        }
+
+        header {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        background-color: #121212;
+        }
+
+        header h1 {
+        color: #f0f0f0;
+        font-size: 24px;
+        }
+
+        header h1 span {
+        color: var(--base-color);
+        }
+
+        nav a {
+        color: #f0f0f0;
+        margin: 0 15px;
+        text-decoration: none;
+        }
+
+        nav a:hover {
+        color: var(--base-color);
+        }
+
+        .services-section {
+        text-align: center;
+        padding: 50px 20px;
+        }
+
+        .services-section h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        }
+
+        .services {
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+        }
+
+        .service-box {
+        background-color: #1e1e1e;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px var(--shadow-color);
+        width: 30vw;
+        min-height: 150px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        
+        box-sizing: border-box;
+
+        }
+
+        #cont
+        {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .service-box h3 {
+        color: var(--base-color);
+        margin-bottom: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .service-box.appear {
+        opacity: 1;
+        transform: translateY(0);
+        }
+
+        .service-box p{
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .service-box p a{
+            color: #7dfbdd;
+            text-decoration: none;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            /* border: 1px solid #00ffc3; */
+            border-radius: 20%;
+            /* padding:3px; */
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #00ffc3;
+            border-radius: 20%;
+        }
+
+  </style>
+</head>
+<body>
+  <header>
+    <!-- <h1><span>S</span>Dronics</h1> -->
+    <nav>
+      <a href="main_page.html">HOME</a>
+      <a href="CG2_2.html">EDUCATION</a>
+      <a href="CG2_3.html" >SKILLS</a>
+      <a href="CG2_4_1.html">PROJECTS</a>
+      <a href="CG2_5.html" style = "color:#00e1ff ; font-family: var(--text-font);">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="services-section">
+    <h2>CONTACTS</h2>
+    <div class="services">
+      <div class="service-box" id="box4">
+            <h3>PHONE NUMBERS</h3>
+            <section id = "cont">
+            <p>contact number : <a href="" >+91 6290 XXX XXX</a><br> 
+                landline number : <a href="">033 2241 XXXX</a>
+            </p>
+            </section>
+        </div>
+
+      <div class="service-box" id="box3">
+            <h3>EMAIL</h3>
+            <p>email ID : <a href="mailto:btech10418.23@bitmesra.ac.in" target="_blank">soumyadeepdutta123@gmail.com</a></p><br>
+            <p>address : <a href="https://maps.app.goo.gl/WUBrieur719tje2g8" target = "_blank">use this address if needed</a></p>
+      </div>
+      
+      <div class="service-box" id="box2">
+            <h3>OFFICIAL HANDLES</h3>
+            <div class="social-icons">
+                <a href= "https://www.linkedin.com/in/soumyadeep-dutta-221b06292/" target = "_blank"><img src="images/174857.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/simple_soumyadeep/" target = "_blank"><img src="images/insta.jpg" alt="Instagram"></a>
+                <a href="https://leetcode.com/u/Mr_SimpleDeep/" target = "_blank"><img src="images/LeetCode.png" alt="Leetcode"></a>
+                <a href="https://github.com/SimpleMan05" target="_blank"><img src="images/github.jpg" alt="Github"></a>
+                <a href="mailto:btech10418.23@bitmesra.ac.in" target="_blank"><img src="images/gmail.png" alt="GMail"></a>
+            </div>
+      </div>
+
+      <div class="service-box" id="box1">
+            <h3>WRITE US</h3>
+            <form >
+                <label for="comment" style = "font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;padding-bottom: 10%;">You can reach us or give any review here </label>
+                <textarea name = "textarea" id = "comment" cols = "50" rows = "10" placeholder = "Write here" style = "background-color: #1e1e1e;color:#00ffc3"></textarea>
+                <br>
+                <!-- <input type="button" value="SUBMIT" style = "background-color: #00ffc3;border-radius:20%;padding:5px; margin-top:5px; font-family: monospace;" action = "Reset"> -->
+                <button  style = "background-color: #00ffc3;border-radius:20%;padding:5px; margin-top:5px;font-family: monospace;">SUBMIT</button>
+
+            </form>
+        
+      </div>
+    </div>
+  </section>
+
+  <script >
+    // Function to add appear class to each box one by one
+function revealBoxes() {
+  const boxes = document.querySelectorAll('.service-box');
+  let delay = 0;
+
+  boxes.forEach((box, index) => {
+    if (isElementInViewport(box) && !box.classList.contains('appear')) {
+      setTimeout(() => {
+        box.classList.add('appear');
+      }, delay);
+      delay += 200; // Delay each box by 200ms
+    }
+  });
+}
+
+// Function to check if an element is in the viewport
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Event listener for scroll
+window.addEventListener('scroll', revealBoxes);
+
+// Initial check on page load
+document.addEventListener('DOMContentLoaded', revealBoxes);
+
+  </script>
+</body>
+</html>

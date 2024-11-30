@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+      background-color: #121212;
+    }
+
+    header h1 {
+      color: #f0f0f0;
+      font-size: 24px;
+    }
+
+    header h1 span {
+      color: #0ff;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #0ff;
+    }
+
+    .projects-section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .projects-section h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 20px;
+      width: 100%;
+      max-width: 90vw;
+      margin:5vh;
+    }
+
+    .project-box {
+
+      opacity:0;
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width:300px;
+      height:300px;
+      overflow:visible;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .project-box:hover{
+      transform: scale(1.01);
+    }
+/* .project-box {
+    background-color: #1e1e1e;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box; /* Includes padding in the total width and height 
+    } */
+
+
+    #project_image{
+        width:30%;
+        height:30%;
+        border-radius: 50%;
+        border: solid 2px aqua;
+        margin-bottom: 10%;
+        transition: transform 0.3s;
+    }
+
+    #project_image:hover
+    {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px #00ffc3;
+            
+    }
+
+    .project-box:hover {
+      background-color: #000000;
+    }
+
+    .project-box h3 {
+        font-size:1rem;
+      color: #f0f0f0;
+      margin-bottom: 5px;
+    }
+    .project-box h2{
+        font-size:1rem;
+        color: rgb(0, 250, 187);
+        text-shadow: 0px 0px 5px rgb(0, 0, 0);
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        transition-duration: 150ms;
+        transition-timing-function: liner;
+    }
+
+    .project-box h2:hover{
+        color:rgb(0, 166, 255);
+        
+    }
+
+    .project-box p {
+      margin-bottom: 10px;
+      display: none;
+      color: #b0b0b0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+       Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .project-box.active p {
+      display: block;
+    }
+
+    .project-box.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+    #gthb {
+        margin-top: 10%;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            /* border: 1px solid #00ffc3; */
+            border-radius: 20%;
+            padding:3px;
+        }
+
+    #gthb:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #00ffc3;
+            border-radius: 20%;
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- <h1><span>S</span>Dronics</h1> -->
+    <nav>
+      <a href="main_page.html">HOME</a>
+      <a href="CG2_2.html">EDUCATION</a>
+      <a href="CG2_3.html">SKILLS</a>
+      <a href="CG2_4_1.html" style="color:#00e1ff ; font-family: var(--text-font);">PROJECTS</a>
+      <a href="CG2_5.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <div class="projects-section">
+    <h2>PROJECTS</h2>
+    <div class="projects">
+      <div class="project-box" onclick="toggleProject(this)" id = "box1">
+        <h3>Project 1:</h3>
+        <h2> Micromouse </h2>
+        <img id = "project_image" src="images/micromouse.jpg" alt="image not found">
+        <p>"This project involves building an autonomous maze solving bot that can read a maze and traverse to the destination through the shortest path"
+    </br><a href="https://github.com/SimpleMan05" target="_blank"><img id = "gthb" src="images/github.jpg" alt="Github"></a></p>
+      </div>
+
+      <div class="project-box" onclick="toggleProject(this)" id = "box2">
+        <h3>Project 2:</h3>
+        <h2> Virtual Garden </h2>
+        <img id = "project_image" src="images/plant.jpg" alt="image not found">
+        <p>"A 3D interactive garden showcasing Ayurvedic plants with detailed information about their uses. <br><b>Made using ThreeJs</b>" 
+        </br><a href="https://github.com/SimpleMan05" target="_blank"><img id = "gthb" src="images/github.jpg" alt="Github"></a>
+        </p>
+      </div>
+
+      <div class="project-box" onclick="toggleProject(this)" id = "box3">
+        <h3>Project 3:</h3>
+        <h2>Self Balancing Bot</h2>
+        <img id = "project_image" src="images/self_balance.jpg" alt="image not found">
+        <p>"A self-balancing robot using ESP32 and MPU6050, capable of balancing itself on its own."
+        </br><a href="https://github.com/SimpleMan05" target="_blank"><img id = "gthb" src="images/github.jpg" alt="Github"></a>
+        </p>
+      </div>
+    </div>
+    <div class="projects">
+        <div class="project-box" onclick="toggleProject(this)" id = "box4">
+            <h3>Project 4:</h3>
+            <h2>Sudoku Solver</h2>
+            <img id = "project_image" src="images/sudoku.jpg" alt="image not found">
+            <p>" Solving a sudoku within no time" <b>Made in C++</b></br>
+             <a href="https://github.com/SimpleMan05" target="_blank"><img id = "gthb" src="images/github.jpg" alt="Github"></a></p>
+        </div>
+
+        <div class="project-box" onclick="toggleProject(this)" id = "box5">
+            <h3>Project 5:</h3>
+            <h2>Library Management System</h2>
+            <img id = "project_image" src="images/library.jpg" alt="image not found">
+            <p>"Keeping a track of all the books in library, books issued and returned and fine charged on late returns.<br><b> Made using python and mysql</b>."
+            </br>
+            <a href="https://github.com/SimpleMan05" target="_blank"><img id = "gthb"  src="images/github.jpg" alt="Github"></a>
+            </p>
+        </div>
+
+        <div class="project-box" onclick="toggleProject(this)" id = "box6">
+            <h3>Project 6:</h3>
+            <h2>BookBucket</h2>
+            <img id = "project_image" src="images/bb.png" alt="image not found">
+            <p>"A collection of all the educational books with their link to buy as well as its online soft copy . </br><b>Made using HTML CSS and JS</b>"
+            </br><a href="https://github.com/SimpleMan05" target="_blank"><img id = "gthb" src="images/github.jpg" alt="Github"></a>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+  <script>
+    
+
+    
+
+
+    function revealBoxes() {
+    const boxes = document.querySelectorAll('.project-box');
+    let delay = 0;
+
+    boxes.forEach((box, index) => {
+      if (isElementInViewport(box) && !box.classList.contains('appear')) {
+        setTimeout(() => {
+          box.classList.add('appear');
+        }, delay);
+        delay += 200; // Delay each box by 200ms
+      }
+    });
+  }
+
+  // Function to check if an element is in the viewport
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Event listener for scroll
+  window.addEventListener('scroll', revealBoxes);
+
+  // Initial check on page load
+  document.addEventListener('DOMContentLoaded', revealBoxes);
+
+
+
+  function toggleProject(box) {
+      box.classList.toggle('active');
+    }
+
+  </script>
+</body>
+</html>
