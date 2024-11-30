@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="./imgs/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo-holder">
+            <div class="logo">RK</div>
+            <div class="logo-text">Portfolio Website</div>
+        </a>
+        <nav>
+			<p><b>Dark Mode</b></p>
+			<div class="theme-toggle">
+				<i id="toggleThemeIcon" class="fa-solid fa-toggle-on"></i>
+			</div>
+			
+            <ul id="menu">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#timeline">Timeline</a>
+                </li>
+                <li>
+                    <a href="#contact" class="button">Contact Me</a>
+                </li>
+            </ul>
+            <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+					<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+				</svg>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+		<section class="hero container">
+			<div class="hero-blue">
+				<div>
+					<h1><small>Hi I'm</small>Rishav Kamal</h1>
+                    <p>
+						Aspiring Software Developer || Passionate about Coding & Web Development.<br>
+                        I am a dedicated and enthusiastic engineering student with a passion for problem-solving through coding and a keen interest in web development.<br> 
+                        Currently persuing a degree in Chemical Engineering at Birla Institute Of Technology. I am constantly seeking to improve my skills.
+                    </p>
+                    <div class="call-to-action">
+						<a href="./imgs/Rishav Kamal.pdf" class="button black">View Resume</a>
+						<a href="#contact" class="button white">Contact Me</a>
+					</div>
+                    <div class="social-links">
+						<a href="https://github.com/RishavK010"><img src="./imgs/github.png" class="links" alt="GitHub" width="48" /></a>
+						<a href="https://www.linkedin.com/in/rishav-kamal-69046a28b/"><img src="./imgs/linkedin.png" class="links" alt="LinkedIn" width="48" /></a>
+                        <a href="https://leetcode.com/u/RishavK10/"><img src="./imgs/leetcode.webp" class="links" alt="Leetcode" width="48" /></a>
+                        <a href="https://codeforces.com/profile/RishavK10"><img src="./imgs/codeforces.webp" class="links" alt="Codeforces" width="48" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="hero">
+				<img src="./imgs/profile.png" alt="Rishav Kamal" width="100%" />
+			</div>
+		</section>
+
+        <section class="logos container">
+            <div class="marquee">
+                <div class="track">
+                    <img src="./imgs/html.png" alt="HTML" width="128" />
+                    <img src="./imgs/css.png" alt="CSS" width="128" />
+                    <img src="./imgs/javascript.png" alt="JS" width="128" />
+                    <img src="./imgs/vscode.png" width="128" alt="VS Code" />
+                    <img src="./imgs/java.png" width="128" alt="Java" />
+                    <img src="./imgs/c.png" width="128" alt="C" />
+                    <img src="./imgs/IntelliJ.png" width="128" alt="IntelliJ IDEA"/>
+                    <img src="./imgs/html.png" alt="HTML" width="128" />
+                    <img src="./imgs/css.png" alt="CSS" width="128" />
+                    <img src="./imgs/javascript.png" alt="JS" width="128" />
+                    <img src="./imgs/vscode.png" width="128" alt="VS Code" />
+                    <img src="./imgs/java.png" width="128" alt="Java" />
+                    <img src="./imgs/c.png" width="128" alt="C" />
+                    <img src="./imgs/IntelliJ.png" width="128" alt="IntelliJ IDEA"/>
+                    
+                </div>
+            </div>
+        </section>
+
+		<section id="skills" class="skills">
+			<h2>Skills</h2>
+			<div class="skills-container">
+		  
+			  <!-- Left Div: Languages and Developer Tools -->
+			  <div class="skills-left">
+				<div class="skills-category">
+				  <h3>Languages</h3>
+				  <div class="skills-grid">
+					<div class="skill-item">
+					  <i class="fab fa-html5 skill-icon"></i>
+					  <span>HTML</span>
+					</div>
+					<div class="skill-item">
+					  <i class="fab fa-css3-alt skill-icon"></i>
+					  <span>CSS</span>
+					</div>
+					<div class="skill-item">
+					  <i class="fab fa-js-square skill-icon"></i>
+					  <span>JavaScript</span>
+					</div>
+					<div class="skill-item">
+					  <i class="fab fa-java skill-icon"></i>
+					  <span>Java</span>
+					</div>
+					<div class="skill-item">
+						<img src="./imgs/c.png" class="skill-icon" width="30">
+					  <span>C</span>
+					</div>
+				  </div>
+				</div>
+			  
+				<div class="skills-category">
+				  <h3>Developer Tools</h3>
+				  <div class="skills-grid">
+					<div class="skill-item">
+					  <i class="fab fa-git-alt skill-icon"></i>
+					  <span>Git</span>
+					</div>
+					<div class="skill-item">
+					  <i class="fab fa-github skill-icon"></i>
+					  <span>GitHub</span>
+					</div>
+					<div class="skill-item">
+					  <img src="./imgs/intel icon.webp" class="skill-icon" width="35">
+					  <span>IntelliJ IDEA</span>
+					</div>
+					<div class="skill-item">
+						<img src="./imgs/vsicon.png" class="skill-icon" width="30">
+					  <span>VS Code</span>
+					</div>
+				  </div>
+				</div>
+			  </div>
+		  
+			  <!-- Right Div: Proficiency Progress Bars -->
+			  <div class="skills-right">
+				<h3>Proficiency</h3>
+				<div class="progress-bar-container">
+				  <div class="progress-bar">
+					<span class="label">JavaScript</span>
+					<div class="bar">
+					  <div class="fill" style="width: 30%;"></div>
+					</div>
+					<span class="percentage">30%</span>
+				  </div>
+				  <div class="progress-bar">
+					<span class="label">HTML</span>
+					<div class="bar">
+					  <div class="fill" style="width: 90%;"></div>
+					</div>
+					<span class="percentage">90%</span>
+				  </div>
+				  <div class="progress-bar">
+					<span class="label">CSS</span>
+					<div class="bar">
+					  <div class="fill" style="width: 70%;"></div>
+					</div>
+					<span class="percentage">75%</span>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+
+        <section id="timeline" class="timeline">
+			<h2>Timeline</h2>
+			<div class="school">
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/Loyola.jpg" alt="Loyola School" width="100%" />
+                            <figcaption>
+								Loyola School
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Loyola School</h3>
+					<div>ICSE (2010-2020)</div>
+                    <p>Key Subjects: Mathematics Science and Computer (91%)</p>
+				</article>
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/NHES.webp" alt="NHES" width="100%" />
+                            <figcaption>
+								NHES
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Narbheram Hansraj English High School</h3>
+					<div>ISC (2020-2022)</div>
+					<p>Key Subjects: Mathematics and Computer (88%)</p>
+				</article>
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/bitmesra.jpg" alt="BIT MESRA" width="100%" />
+                            <figcaption>
+								BIT MESRA
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Birla Institute Of Technology</h3>
+					<div>B.E/B.Tech (2023-Current)</div>
+					<p>Chemical Engineering (CGPA: 8.04)</p>
+				</article>
+			</div>
+		</section>
+
+        <section id="contact" class="contact">
+			<h2>Contact Me</h2>
+			<div class="chatbot-blue">
+				<div class="chat-info">
+					<h4>Click on a question to see a response:<h4>
+					<button class="response" onclick="showChatResponse('What languages you know?')">What languages you know?</button>
+                    <button class="response" onclick="showChatResponse('What are your achievements?')">What are your achievements?</button>
+					<button class="response" onclick="showChatResponse('What is your rating in online coding platforms?')">What is your rating in online coding platforms?</button>
+					<button class="response" onclick="showChatResponse('What are your hobbies?')">What are your hobbies?</button>
+                    <button class="response" onclick="showChatResponse('Where can I contact you?')">Where can I contact you?</button>
+				</div>
+				<div class="chat-box">
+					<div class="scroll-area">
+						<ul id="chat-log">
+							<li>
+								<span class="avatar bot">AI</span>
+								<div class="message">
+									Hi, I am Rishav Kamal
+								</div>
+							</li>
+							<li>
+								<span class="avatar user">User</span>
+								<div class="message">
+									Any question? Just drop it down!
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="chat-message">
+						<input type="text" placeholder="Hey Rishav, what skills are you best at?">
+						<button class="button black">Send</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+    <footer>
+        <button id="backToTop" title="Go to top">
+            <i class="fa-solid fa-angle-up"></i>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
