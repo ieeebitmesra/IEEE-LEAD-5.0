@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Navbar Styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(#949db0, #5690a0, #82d0ed);
+  padding: 1rem;
+  height: 6.5rem;
+  max-width: 100%;
+}
+
+nav .Brand {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+nav .Brand:hover{
+  transform: scale(1.1);
+  color: white;
+}
+nav input{
+width:20rem;
+padding:0.5rem;
+border: 2px solid rgb(43, 107, 226);
+border-radius: 10px;
+font-size: 1.2rem;
+
+}
+nav .searchBar button{
+  padding:0.5rem;
+border: 2px solid rgb(16, 81, 151);
+border-radius: 10px;
+margin-left: 1rem;
+width:7rem;
+font-size: 1.2rem;
+}
+nav .searchBar button:hover{
+  color:white;
+  background-color: rgb(27, 177, 37);
+}
+ nav .categoryBtn button{
+  margin-left: 0.5rem;
+  margin-top: 0.4rem;
+  padding:0.5rem;
+  border: 2px solid rgb(43, 55, 226);
+  border-radius: 10px;
+  font-size: 1.2rem;
+ }
+ nav .categoryBtn button:hover{
+  color: white;
+  background-color: #125467;
+ }
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Navigation Links */
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.navLinks.active {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 6.5rem;
+  left: 0;
+  max-width: 100%;
+  background-color: #5690a0;
+  padding: 2rem;
+}
+
+/* Hide Nav Links on Small Screens */
+@media (max-width: 768px) {
+  nav{
+    max-width: 100%;
+  }
+  
+  .hamburger {
+      display: block;
+  }
+
+  .navLinks {
+      display: none;
+  }
+
+  .navLinks.active {
+      display: flex;
+  }
+
+  .searchBar,
+  .categoryBtn {
+      width: 100%;
+  }
+}
+
+/* Card Styles */
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2.7rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 320px;
+  box-shadow: 0px 7px 7px 7px rgba(14, 160, 186, 0.007);
+  background-color: white;
+  border-radius: 7px 0px 0px 7px;
+  margin-top: 21px;
+  border: 1px solid rgb(236, 236, 236);
+}
+
+.card:hover {
+  transform: scale(1.07);
+  transition: 2ms;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 190px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.card .newsTitle a {
+  font-weight: 650;
+  font-size: 18px;
+  margin-top: -7px;
+  color: black;
+}
+
+.card .newsTitle:hover {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.card .content {
+  padding: 10px;
+}
+
+.card button {
+  background-color: rgb(30, 66, 79);
+  border: none;
+  cursor: pointer;
+  width: 95px;
+  height: 30px;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(110, 17, 17);
+  margin-left: 1rem;
+}
+
+.card button a {
+  color: white;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  nav .searchBar {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .Brand {
+    font-size: 1rem;
+  }
+
+  nav input {
+    width: 15rem;
+  }
+}
